@@ -25,25 +25,14 @@ import androidx.compose.ui.unit.sp
 
 
 
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.weight(1f))
 
-        ItemCard(
-            namaRes = R.string.nama_rania,
-            noRes = R.string.no_rania,
-            alamatRes = R.string.alamat_rania,
-            bgColorRes = R.color.card_blue,
-            namaColorRes = R.color.white,
-            detailColorRes = R.color.cyan_text
+        Text(
+            text = stringResource(id = R.string.txt_footer_copyright),
+            fontSize = 12.sp,
+            color = Color.Gray,
+            modifier = Modifier.padding(bottom = 12.dp)
         )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        ItemCard(
-            namaRes = R.string.nama_ahmad,
-            noRes = R.string.no_ahmad,
-            alamatRes = R.string.alamat_ahmad,
-            bgColorRes = R.color.card_green,
-            namaColorRes = R.color.white,
-            detailColorRes = R.color.cyan_text
-        )
+    }
+}
 

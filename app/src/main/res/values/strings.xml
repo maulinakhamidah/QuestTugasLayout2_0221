@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">QuestTugasLayout_0221</string>
+
+
+    <string name="txt_header_title">Teknologi Informasi</string>
+    <string name="txt_header_subtitle">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="txt_footer_copyright">Copyright, 2026</string>
 
 </resources>

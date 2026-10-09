@@ -24,17 +24,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-
-@Composable
-fun ItemCard(
-    namaRes: Int,
-    noRes: Int,
-    alamatRes: Int,
-    bgColorRes: Int,
-    namaColorRes: Int,
-    detailColorRes: Int,
-    isItalicNama: Boolean = false
-) {
     Card(
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(
@@ -63,7 +52,24 @@ fun ItemCard(
                     .padding(horizontal = 12.dp),
                 verticalArrangement = Arrangement.Center
             ) {
-
+                Text(
+                    text = stringResource(id = namaRes),
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    fontStyle = if (isItalicNama) FontStyle.Italic else FontStyle.Normal,
+                    color = colorResource(id = namaColorRes)
+                )
+                Text(
+                    text = stringResource(id = noRes),
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = colorResource(id = detailColorRes)
+                )
+                Text(
+                    text = stringResource(id = alamatRes),
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = colorResource(id = detailColorRes)
                 )
             }
 

@@ -31,13 +31,18 @@ class MainActivity : ComponentActivity() {
                 modifier = Modifier.fillMaxSize(),
                 color = MaterialTheme.colorScheme.background
             ) {
+                MainLayout()
             }
         }
     }
 }
 
-
-            )
+@Composable
+fun MainLayout() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         }
-    }
-}

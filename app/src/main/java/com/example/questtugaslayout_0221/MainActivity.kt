@@ -24,60 +24,28 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 
-    Card(
-        shape = RoundedCornerShape(16.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = colorResource(id = bgColorRes)
-        ),
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(100.dp)
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(horizontal = 16.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo_umy),
-                contentDescription = stringResource(id = R.string.desc_logo_umy),
-                modifier = Modifier.size(50.dp)
-            )
 
-            Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(horizontal = 12.dp),
-                verticalArrangement = Arrangement.Center
-            ) {
-                Text(
-                    text = stringResource(id = namaRes),
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold,
-                    fontStyle = if (isItalicNama) FontStyle.Italic else FontStyle.Normal,
-                    color = colorResource(id = namaColorRes)
-                )
-                Text(
-                    text = stringResource(id = noRes),
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = colorResource(id = detailColorRes)
-                )
-                Text(
-                    text = stringResource(id = alamatRes),
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = colorResource(id = detailColorRes)
-                )
-            }
+        Spacer(modifier = Modifier.height(24.dp))
 
-            Image(
-                painter = painterResource(id = R.drawable.logo_umy),
-                contentDescription = stringResource(id = R.string.desc_logo_umy),
-                modifier = Modifier.size(50.dp)
-            )
-        }
-    }
-}
+        ItemCard(
+            namaRes = R.string.nama_maulina,
+            noRes = R.string.no_maulina,
+            alamatRes = R.string.alamat_maulina,
+            bgColorRes = R.color.card_grey,
+            namaColorRes = R.color.white,
+            detailColorRes = R.color.yellow_text,
+            isItalicNama = true
+        )
+
+        Spacer(modifier = Modifier.height(12.dp))
+
+        ItemCard(
+            namaRes = R.string.nama_rahma,
+            noRes = R.string.no_rahma,
+            alamatRes = R.string.alamat_rahma,
+            bgColorRes = R.color.card_purple,
+            namaColorRes = R.color.white,
+            detailColorRes = R.color.cyan_text
+        )
+
+     

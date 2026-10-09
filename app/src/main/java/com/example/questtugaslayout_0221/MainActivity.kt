@@ -25,27 +25,25 @@ import androidx.compose.ui.unit.sp
 
 
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(12.dp))
 
         ItemCard(
-            namaRes = R.string.nama_maulina,
-            noRes = R.string.no_maulina,
-            alamatRes = R.string.alamat_maulina,
-            bgColorRes = R.color.card_grey,
+            namaRes = R.string.nama_rania,
+            noRes = R.string.no_rania,
+            alamatRes = R.string.alamat_rania,
+            bgColorRes = R.color.card_blue,
             namaColorRes = R.color.white,
-            detailColorRes = R.color.yellow_text,
-            isItalicNama = true
+            detailColorRes = R.color.cyan_text
         )
 
         Spacer(modifier = Modifier.height(12.dp))
 
         ItemCard(
-            namaRes = R.string.nama_rahma,
-            noRes = R.string.no_rahma,
-            alamatRes = R.string.alamat_rahma,
-            bgColorRes = R.color.card_purple,
+            namaRes = R.string.nama_ahmad,
+            noRes = R.string.no_ahmad,
+            alamatRes = R.string.alamat_ahmad,
+            bgColorRes = R.color.card_green,
             namaColorRes = R.color.white,
             detailColorRes = R.color.cyan_text
         )
 
-     
